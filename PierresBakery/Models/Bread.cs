@@ -1,6 +1,6 @@
 using System;
 
-namespace PierresBakery
+namespace PierresBakery.Models
 {
   public class Bread
   {
