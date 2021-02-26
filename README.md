@@ -44,7 +44,14 @@ navigate to PierresBakery.Tests directory, run $ dotnet restore, this will creat
 ## Specifications
 
 | Behavior                                                         | Input  | Output  |
-| ---------------------------------------------------------------- | -----: | ------: |
+| ---------------------------------------------------------------- | :----- | :------ |
+| User will receive a welcome message when they run the program             | user runs the program | Welcome to Pierre's Bakery! |
+| User will receive a message with the cost of Bread                        | user runs the program | Bread: Buy 2, get 1 free. A single loaf costs $5. |
+| User will receive a message with the cost of Pastry                       | user runs the program  | Pastry: Buy 1 for $2 or 3 for $5. |
+| User receives an order prompt for Bread                                   | user runs the program  | How many loaves of bread would you like? |
+| Program will add loaves of bread to order total                           | 1                      | $5
+| User receives an order prompt for Pastry                                  | user bread order input | How many pastries would you like to add to your order? |
+|  User receives an order prompt for Pastry                                 | 1                      | $2 |
 
 ## Known Bugs
 
