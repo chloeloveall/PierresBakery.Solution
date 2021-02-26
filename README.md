@@ -1,3 +1,4 @@
+![Welcome to Pierre's Bakery](img/pierres-bakery.png)
 # _Pierre's Bakery_
 
 #### _A console application that allows a user to place an order for bread and/or pastries_
