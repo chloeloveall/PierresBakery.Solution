@@ -15,12 +15,25 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetSingleLoafPrice_ReturnsSingleLoafPrice_Int()
+    public void GetBreadPrice_ReturnsBreadPrice_Int()
     {
       int loaf = 5;
       Bread newBread = new Bread(loaf);
       int loafPriceResult = newBread.Loaf;
       Assert.AreEqual(loaf, loafPriceResult);
+    }
+
+    [TestMethod]
+    public void SetBreadPrice_SetBreadPrice_Int()
+    {
+      int loaf = 5;
+      Bread newBread = new Bread(loaf);
+
+      int updatedLoaf = loaf * 2;
+      newBread.Loaf = updatedLoaf;
+      int loafPriceResult = newBread.Loaf;
+
+      Assert.AreEqual(updatedLoaf, loafPriceResult);
     }
 
   }
