@@ -44,9 +44,23 @@ namespace PierresBakery.Tests
     }
 
     [TestMethod]
-    public void GetAll_ReturnsEmptyList_ItemList()
+    public void GetAll_ReturnsEmptyList_BreadList()
     {
       List<Bread> newBreadList = new List<Bread> { };
+
+      List<Bread> result = Bread.GetAll();
+
+      CollectionAssert.AreEqual(newBreadList, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsBreads_BreadList()
+    {
+      int loafOne = 5;
+      int loafTwo = 5;
+      Bread newBreadOne = new Bread(loafOne);
+      Bread newBreadTwo = new Bread(loafTwo);
+      List<Bread> newBreadList = new List<Bread> { newBreadOne, newBreadTwo };
 
       List<Bread> result = Bread.GetAll();
 
