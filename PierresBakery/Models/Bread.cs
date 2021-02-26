@@ -4,6 +4,11 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    // properties, constructors, methods, etc. go here
+    public int Loaf { get; }
+
+    public Bread(int loaf)
+    {
+      Loaf = loaf;
+    }
   }
 }
