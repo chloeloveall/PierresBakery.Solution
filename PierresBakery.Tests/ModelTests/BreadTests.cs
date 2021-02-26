@@ -1,11 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
+using System;
+using System.Collections.Generic;
 
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class BreadTests : IDisposable
   {
+
+    public void Dispose()
+    {
+      Bread.ClearAll();
+    }
     
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
@@ -34,6 +41,16 @@ namespace PierresBakery.Tests
       int loafPriceResult = newBread.Loaf;
 
       Assert.AreEqual(updatedLoaf, loafPriceResult);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_ItemList()
+    {
+      List<Bread> newBreadList = new List<Bread> { };
+
+      List<Bread> result = Bread.GetAll();
+
+      CollectionAssert.AreEqual(newBreadList, result);
     }
 
   }
