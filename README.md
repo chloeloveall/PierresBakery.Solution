@@ -14,6 +14,7 @@
 2. [Description](#description)
 4. [Technologies Used](#technologies-used)
 5. [Setup/Installation Requirements](#setup-&-installation-requirements)
+    * [Prior to Installation](#prior-to-installation)
     * [Installation](#installation)
 6. [Specifications](#specifications)
 7. [Known Bugs](#known-bugs)
@@ -34,6 +35,19 @@ More detailed description
 
 ## Setup & Installation Requirements
 
+### Prior to Installation
+
+* Confirm you have installed .NET installed - this will provide access to the C# language
+  * [.NET for macOS](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.100-macos-x64-installer)
+  * [.NET for Windows](https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-5.0.102-windows-x64-installer)
+* Additionally, you may want to install a REPL to allow you to practice, test, and experiment with C#. Below are instructions for the ```dotnet script``` REPL:
+  * Install ```dotnet script``` by running the following terminal command: ```$ dotnet tool install -g dotnet-script```
+  * **NOTE:** If you just installed .NET 5, restart the terminal. (Otherwise, you will not be able to run the following command.) 
+    * Enter ```$ dotnet script``` in your terminal and a prompt will open: ```>```
+    * To exit the REPL press: Ctrl +C
+
+
+
 ### Installation
 * Clone the repository with the following git terminal command: ```$ git clone https://github.com/chloeloveall/PierresBakery.Solution.git```
 * Open the project directory in your terminal
@@ -52,6 +66,8 @@ navigate to PierresBakery.Tests directory, run $ dotnet restore, this will creat
 | Program will add loaves of bread to order total                           | 1                      | $5
 | User receives an order prompt for Pastry                                  | user bread order input | How many pastries would you like to add to your order? |
 |  User receives an order prompt for Pastry                                 | 1                      | $2 |
+| User receives the option to checkout or amend order                       | Checkout (Y)           | Order total $ |
+| User receives the option to checkout or amend order                       | Amend (N)              | How many loaves of bread would you like? |
 
 ## Known Bugs
 
@@ -76,6 +92,7 @@ Contributions are what make the open source community such an amazing place to b
 
 * [Shields](https://shields.io/)
 * [Choose an open source license](https://choosealicense.com/)
+* [Microsoft C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
 
 ## Contact Information
 
