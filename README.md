@@ -1,4 +1,5 @@
 ![Welcome to Pierre's Bakery](img/pierres-bakery.png)
+
 # _Pierre's Bakery_
 
 #### _A console application that allows a user to place an order for bread and/or pastries_
@@ -46,14 +47,12 @@ More detailed description
     * Enter ```$ dotnet script``` in your terminal and a prompt will open: ```>```
     * To exit the REPL press: Ctrl +C
 
-
-
 ### Installation
 * Clone the repository with the following git terminal command: ```$ git clone https://github.com/chloeloveall/PierresBakery.Solution.git```
 * Open the project directory in your terminal
-* 
-
-navigate to PierresBakery.Tests directory, run $ dotnet restore, this will create obj directories in both production and test projects. Do not touch this code.
+* Navigate to the ```PierresBakery.Tests``` directory
+    * To create ```obj``` directories in both production and test projects, run the terminal command: ```$ dotnet restore```
+    * **NOTE**: Do not touch the code in either ```obj``` directory.
 
 ## Specifications
 
