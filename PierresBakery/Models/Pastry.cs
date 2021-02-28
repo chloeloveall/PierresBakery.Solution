@@ -5,6 +5,11 @@ namespace PierresBakery.Models
 {
   public class Pastry
   {
-    // properties, constructors, methods, etc. go here
+    public int NumOfPastry;
+
+    public Pastry(int numOfPastry)
+    {
+      NumOfPastry = numOfPastry;
+    }
   }
 }
