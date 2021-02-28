@@ -20,7 +20,6 @@ namespace PierresBakery.Tests
     public void GetNumberOfPastry_ReturnsNumberOfPastry_Int()
     {
       int numOfPastry = 1;
-      // int priceOfPastry = 2; priceOfPastry
       Pastry newPastry = new Pastry(numOfPastry);
       int numOfPastryResult = newPastry.NumOfPastry;
       Assert.AreEqual(numOfPastry, numOfPastryResult);
