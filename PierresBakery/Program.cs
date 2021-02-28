@@ -65,13 +65,8 @@ namespace PierresBakery
       else
       {
         Console.WriteLine("This is not a valid input! Now you have to start over!");
+        Main();
       }
-
-      // int numOfBread = int.Parse(Console.ReadLine());
-      // Bread newBread = new Bread(numOfBread);
-      // Console.WriteLine($"That brings your subtotal to: $ {newBread.BreadPriceTotal(numOfBread)}. How many pastries would you like to add?");
-      // int numOfPastry = int.Parse(Console.ReadLine());
-      // Pastry newPastry = new Pastry(numOfPastry);
 
       string inputPastry = Console.ReadLine();
       int numOfPastry;
@@ -84,8 +79,8 @@ namespace PierresBakery
       else
       {
         Console.WriteLine("This is not a valid input! Now you have to start over!");
+        Main();
       }
-      // Console.WriteLine($"Your order total is: $ {newBread.BreadPriceTotal(numOfBread) + newPastry.PastryPriceTotal(numOfPastry)}");
       string croissant = @"
          ____                                    ?~~bL
         z@~ b                                    |  `U,
