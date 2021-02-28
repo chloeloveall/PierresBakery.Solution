@@ -22,10 +22,14 @@ namespace PierresBakery.Models
         int pastryResult = ((numOfPastry / 3) * 5);
         return pastryResult;
       }
+      else if (numOfPastry < 3)
+      {
+        int pastryResult = (numOfPastry * 2);
+        return pastryResult;
+      }
       else
       {
-        // int pastryResult = (numOfPastry * 2);
-        return numOfPastry;
+        return 0;
       }
     }
   }
