@@ -5,7 +5,7 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    public int NumOfBread;
+    public int NumOfBread { get; }
 
     public Bread(int numOfBread)
     {
