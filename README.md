@@ -26,7 +26,7 @@
 
 ## Description
 
-More detailed description
+A basic console application for the first week of the Epicodus C# and .NET program. When the program is run, the user receives a welcome message, a menu with prices, and a prompt to begin their order with a bread quantity input. Next, the user receives a subtotal and a prompt to add a pastry quantity. The user then receives a grand total, a thank you message, and some ASCII art!
 
 ## Technologies Used
 
@@ -62,11 +62,10 @@ More detailed description
 | User will receive a message with the cost of Bread                        | user runs the program | Bread: Buy 2, get 1 free. A single loaf costs $5. |
 | User will receive a message with the cost of Pastry                       | user runs the program  | Pastry: Buy 1 for $2 or 3 for $5. |
 | User receives an order prompt for Bread                                   | user runs the program  | How many loaves of bread would you like? |
-| Program will add loaves of bread to order total                           | 1                      | $5
+| Program will add cost of bread to order price total                       | 1                      | $5
 | User receives an order prompt for Pastry                                  | user bread order input | How many pastries would you like to add to your order? |
-|  User receives an order prompt for Pastry                                 | 1                      | $2 |
-| User receives the option to checkout or amend order                       | Checkout (Y)           | Order total $ |
-| User receives the option to checkout or amend order                       | Amend (N)              | How many loaves of bread would you like? |
+| Program will add pastries to order price total                            | 1                      | $2 |
+| Program will start order over if invalid input id received                | Q                      | "This is not a valid input! Now you have to start over!" / Program starts again from Main() |
 
 ## Known Bugs
 
@@ -92,6 +91,7 @@ Contributions are what make the open source community such an amazing place to b
 * [Shields](https://shields.io/)
 * [Choose an open source license](https://choosealicense.com/)
 * [Microsoft C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [Patorjk.com ASCII Art Generator](https://www.patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
 
 ## Contact Information
 
