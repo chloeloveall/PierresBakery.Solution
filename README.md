@@ -14,7 +14,7 @@
 1. [Table of Contents](#table-of-contents)
 2. [Description](#description)
 4. [Technologies Used](#technologies-used)
-5. [Setup/Installation Requirements](#setup-&-installation-requirements)
+5. [Setup and Installation Requirements](#setup-and-installation-requirements)
     * [Prior to Installation](#prior-to-installation)
     * [Installation](#installation)
 6. [Specifications](#specifications)
@@ -34,7 +34,7 @@ A basic console application for the first week of the Epicodus C# and .NET progr
 * MSTest
 * .NET
 
-## Setup & Installation Requirements
+## Setup and Installation Requirements
 
 ### Prior to Installation
 
