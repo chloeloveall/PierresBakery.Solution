@@ -12,7 +12,7 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry newPastry = new Pastry(1, 2);
+      Pastry newPastry = new Pastry(1);
       Assert.AreEqual(typeof(Pastry), newPastry.GetType());
     }
 
@@ -20,21 +20,38 @@ namespace PierresBakery.Tests
     public void GetNumberOfPastry_ReturnsNumberOfPastry_Int()
     {
       int numOfPastry = 1;
-      int priceOfPastry = 2;
-      Pastry newPastry = new Pastry(numOfPastry, priceOfPastry);
+      // int priceOfPastry = 2; priceOfPastry
+      Pastry newPastry = new Pastry(numOfPastry);
       int numOfPastryResult = newPastry.NumOfPastry;
       Assert.AreEqual(numOfPastry, numOfPastryResult);
     }
 
+    // [TestMethod]
+    // public void GetPriceOfPastry_ReturnsPriceOfPastry_Int()
+    // {
+    //   int numOfPastry = 1;
+    //   int priceOfPastry = 2;
+    //   Pastry newPastry = new Pastry(numOfPastry, priceOfPastry);
+    //   int priceOfPastryResult = newPastry.PriceOfPastry;
+    //   Assert.AreEqual(priceOfPastry, priceOfPastryResult);
+    // }
+
     [TestMethod]
-    public void GetPriceOfPastry_ReturnsPriceOfPastry_Int()
+    public void PastryPriceTotal_ReturnsPastryPriceTotal_Int()
     {
-      int numOfPastry = 1;
-      int priceOfPastry = 2;
-      Pastry newPastry = new Pastry(numOfPastry, priceOfPastry);
-      int priceOfPastryResult = newPastry.PriceOfPastry;
-      Assert.AreEqual(priceOfPastry, priceOfPastryResult);
+      int numOfPastry = 7;
+      Pastry newPastry = new Pastry(numOfPastry);
+      int pastryResult = ((numOfPastry / 3) * 5);
+      Assert.AreEqual(10, pastryResult);
     }
+
+    // [TestMethod]
+    // public void GetTotalPastryCount_ReturnsTotalNumberOfPastry_Int()
+    // {
+    //   int numOfPastryTotal = 5;
+    //   Pastry newPastry = new Pastry();
+    //   int numOfPastryTotal
+    // }
 
   }
 }
