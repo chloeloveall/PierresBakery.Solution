@@ -14,16 +14,17 @@ namespace PierresBakery.Models
 
     public int BreadPriceTotal(int numOfBread)
     {
-      if (numOfBread < 2)
+      if (numOfBread < 3)
       {
         int breadResult = (numOfBread * 5);
         return breadResult;
       }
       else
       {
-        return 0;
+        int breadResult = ((numOfBread / 3) * 10);
+        return breadResult;
       }
     }
-    
+
   }
 }
