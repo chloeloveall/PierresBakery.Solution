@@ -25,6 +25,15 @@ namespace PierresBakery.Tests
       Assert.AreEqual(numOfBread, numOfBreadResult);
     }
 
+    [TestMethod]
+    public void BreadPriceTotal_ReturnsBreadPriceTotal_Int()
+    {
+      int numOfBread = 1;
+      Bread newBread = new Bread(numOfBread);
+      int breadResult = (numOfBread * 5);
+      Assert.AreEqual(5, breadResult);
+    }
+
 
 
 

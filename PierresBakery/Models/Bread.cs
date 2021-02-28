@@ -12,21 +12,18 @@ namespace PierresBakery.Models
       NumOfBread = numOfBread;
     }
 
-
-    // public static void ClearAll()
-    // {
-    //   _loaves.Clear();
-    // }
-
-    // public static List<Bread> GetAll()
-    // {
-    //   return _loaves;
-    // }
-
-    // public Bread(int loaf)
-    // {
-    //   Loaf = loaf;
-    //   _loaves.Add(this);
-    // }
+    public int BreadPriceTotal(int numOfBread)
+    {
+      if (numOfBread < 2)
+      {
+        int breadResult = (numOfBread * 5);
+        return breadResult;
+      }
+      else
+      {
+        return 0;
+      }
+    }
+    
   }
 }
