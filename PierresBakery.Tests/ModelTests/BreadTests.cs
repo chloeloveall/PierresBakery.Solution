@@ -43,5 +43,23 @@ namespace PierresBakery.Tests
       Assert.AreEqual(30, breadResult);
     }
 
+    [TestMethod]
+    public void BreadPriceTotalMixedDeal_ReturnsBreadPriceTotalWithMixedDeal_Int()
+    {
+      int numOfBread = 4;
+      Bread newBread = new Bread(numOfBread);
+      int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + (numOfBread % 3) * 5);
+      Assert.AreEqual(15, breadResult);
+    }
+
+    [TestMethod]
+    public void BreadPriceTotalDealAlt_ReturnsBreadPriceTotalWithDeal_Int()
+    {
+      int numOfBread = 5;
+      Bread newBread = new Bread(numOfBread);
+      int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + (numOfBread % 3) * 5);
+      Assert.AreEqual(20, breadResult);
+    }
+
   }
 }
