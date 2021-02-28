@@ -6,66 +6,70 @@ using System.Collections.Generic;
 namespace PierresBakery.Tests
 {
   [TestClass]
-  public class BreadTests : IDisposable
+  public class BreadTests
   {
-
-    public void Dispose()
-    {
-      Bread.ClearAll();
-    }
     
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread newBread = new Bread(5);
+      Bread newBread = new Bread();
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
-    [TestMethod]
-    public void GetBreadPrice_ReturnsBreadPrice_Int()
-    {
-      int loaf = 5;
-      Bread newBread = new Bread(loaf);
-      int loafPriceResult = newBread.Loaf;
-      Assert.AreEqual(loaf, loafPriceResult);
-    }
+  //   [TestMethod]
+  //   public void GetNumberOfLoaves_ReturnsNumberOfLoaves_Int()
+  //   {
+  //     int numOfLoaves = 1;
+  //     Bread newBread = new Bread(numOfLoaves);
+  //     int numOfLoavesResult = newBread.NumOfLoaves;
+  //     Assert.AreEqual(numOfLoaves, numOfLoavesResult);
+  //   }
 
-    [TestMethod]
-    public void SetBreadPrice_SetBreadPrice_Int()
-    {
-      int loaf = 5;
-      Bread newBread = new Bread(loaf);
+  //   [TestMethod]
+  //   public void GetBreadPrice_ReturnsBreadPrice_Int()
+  //   {
+  //     int loavesPrice = 5;
+  //     Bread newBread = new Bread(loavesPrice);
+  //     int loavesPriceResult = newBread.LoavesPrice;
+  //     Assert.AreEqual(loavesPrice, loavesPriceResult);
+  //   }
 
-      int updatedLoaf = loaf * 2;
-      newBread.Loaf = updatedLoaf;
-      int loafPriceResult = newBread.Loaf;
+  //   [TestMethod]
+  //   public void SetBreadPrice_SetBreadPrice_Int()
+  //   {
+  //     int loavesPrice = 5;
+  //     Bread newBread = new Bread(loavesPrice);
 
-      Assert.AreEqual(updatedLoaf, loafPriceResult);
-    }
+  //     int updatedLoavesPrice = loavesPrice * 2;
+  //     newBread.LoavesPrice = updatedLoavesPrice;
+  //     int loavesPriceResult = newBread.LoavesPrice;
 
-    [TestMethod]
-    public void GetAll_ReturnsEmptyList_BreadList()
-    {
-      List<Bread> newBreadList = new List<Bread> { };
+  //     Assert.AreEqual(updatedLoavesPrice, loavesPriceResult);
+  //   }
 
-      List<Bread> result = Bread.GetAll();
+  //   [TestMethod]
+  //   public void GetAll_ReturnsEmptyList_BreadList()
+  //   {
+  //     List<Bread> newBreadList = new List<Bread> { };
 
-      CollectionAssert.AreEqual(newBreadList, result);
-    }
+  //     List<Bread> result = Bread.GetAll();
 
-    [TestMethod]
-    public void GetAll_ReturnsBreads_BreadList()
-    {
-      int loafOne = 5;
-      int loafTwo = 5;
-      Bread newBreadOne = new Bread(loafOne);
-      Bread newBreadTwo = new Bread(loafTwo);
-      List<Bread> newBreadList = new List<Bread> { newBreadOne, newBreadTwo };
+  //     CollectionAssert.AreEqual(newBreadList, result);
+  //   }
 
-      List<Bread> result = Bread.GetAll();
+  //   [TestMethod]
+  //   public void GetAll_ReturnsBreads_BreadList()
+  //   {
+  //     int loafOne = 5;
+  //     int loafTwo = 5;
+  //     Bread newBreadOne = new Bread(loafOne);
+  //     Bread newBreadTwo = new Bread(loafTwo);
+  //     List<Bread> newBreadList = new List<Bread> { newBreadOne, newBreadTwo };
 
-      CollectionAssert.AreEqual(newBreadList, result);
-    }
+  //     List<Bread> result = Bread.GetAll();
+
+  //     CollectionAssert.AreEqual(newBreadList, result);
+  //   }
 
   }
 }
