@@ -26,16 +26,6 @@ namespace PierresBakery.Tests
       Assert.AreEqual(numOfPastry, numOfPastryResult);
     }
 
-    // [TestMethod]
-    // public void GetPriceOfPastry_ReturnsPriceOfPastry_Int()
-    // {
-    //   int numOfPastry = 1;
-    //   int priceOfPastry = 2;
-    //   Pastry newPastry = new Pastry(numOfPastry, priceOfPastry);
-    //   int priceOfPastryResult = newPastry.PriceOfPastry;
-    //   Assert.AreEqual(priceOfPastry, priceOfPastryResult);
-    // }
-
     [TestMethod]
     public void PastryPriceTotal_ReturnsPastryPriceTotal_Int()
     {
@@ -54,13 +44,14 @@ namespace PierresBakery.Tests
       Assert.AreEqual(4, pastryResult);
     }
 
-    // [TestMethod]
-    // public void GetTotalPastryCount_ReturnsTotalNumberOfPastry_Int()
-    // {
-    //   int numOfPastryTotal = 5;
-    //   Pastry newPastry = new Pastry();
-    //   int numOfPastryTotal
-    // }
+    [TestMethod]
+    public void PastryPriceTotalMixedDeal_ReturnsPastryPriceTotalWithPartialDeal_Int()
+    {
+      int numOfPastry = 13;
+      Pastry newPastry = new Pastry(numOfPastry);
+      int pastryResult = (((numOfPastry - (numOfPastry % 3)) / 3) * 5) + ((numOfPastry % 3) * 2);
+      Assert.AreEqual(22, pastryResult);
+    }
 
   }
 }

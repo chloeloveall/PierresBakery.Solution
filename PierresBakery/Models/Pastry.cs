@@ -6,13 +6,10 @@ namespace PierresBakery.Models
   public class Pastry
   {
     public int NumOfPastry { get; }
-    // public int PriceOfPastry { get; }
-    // , int priceOfPastry
 
     public Pastry(int numOfPastry)
     {
       NumOfPastry = numOfPastry;
-      // PriceOfPastry = priceOfPastry;
     }
 
     public int PastryPriceTotal(int numOfPastry)
@@ -29,7 +26,8 @@ namespace PierresBakery.Models
       }
       else
       {
-        return 0;
+        int pastryResult = (((numOfPastry - (numOfPastry % 3)) / 3) * 5) + ((numOfPastry % 3) * 2);
+        return pastryResult;
       }
     }
   }
