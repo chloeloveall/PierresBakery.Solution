@@ -21,12 +21,12 @@ namespace PierresBakery.Models
       }
       else if (numOfBread % 3 == 1)
       {
-        int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + (numOfBread % 3) * 5);
+        int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + ((numOfBread % 3) * 5));
         return breadResult;
       }
       else if (numOfBread % 3 == 2)
       {
-        int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + (numOfBread % 3) * 5);
+        int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + ((numOfBread % 3) * 5));
         return breadResult;
       }
       else
