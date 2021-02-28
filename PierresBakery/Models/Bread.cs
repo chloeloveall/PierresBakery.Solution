@@ -5,13 +5,13 @@ namespace PierresBakery.Models
 {
   public class Bread
   {
-    // public int NumOfLoaves;
-    // public int LoavesPrice {get; set; }
-    // private static List<Bread> _loaves = new List<Bread> {};
-    // public Bread(int numOfLoaves, int loavesPrice)
-    // {
-      
-    // }
+    public int NumOfBread;
+
+    public Bread(int numOfBread)
+    {
+      NumOfBread = numOfBread;
+    }
+
 
     // public static void ClearAll()
     // {
