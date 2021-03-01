@@ -17,6 +17,7 @@
 5. [Setup and Installation Requirements](#setup-and-installation-requirements)
     * [Prior to Installation](#prior-to-installation)
     * [Installation](#installation)
+    * [Unit Testing with MSTest](#unit-testing-with-ms-test)
 6. [Specifications](#specifications)
 7. [Known Bugs](#known-bugs)
 8. [Contributing](#contributing)
@@ -53,6 +54,12 @@ A basic console application for the first week of the Epicodus C# and .NET progr
 * Navigate to the ```PierresBakery.Tests``` directory
     * To create ```obj``` directories in both production and test projects, run the terminal command: ```$ dotnet restore```
     * **NOTE**: Do not touch the code in either ```obj``` directory.
+
+### Unit Testing with MSTest
+* Navigate to the ```PierresBakery.Tests``` directory
+* Run the terminal command: ```$ $ dotnet test```
+* If everything is set up correctly, you will see something similar to this: 
+![MSTest Screenshot](img/mstest-screenshot.png)
 
 ## Specifications
 
