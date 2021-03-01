@@ -65,7 +65,7 @@ A basic console application for the first week of the Epicodus C# and .NET progr
 | Program will add cost of bread to order price total                       | 1                      | $5
 | User receives an order prompt for Pastry                                  | user bread order input | How many pastries would you like to add to your order? |
 | Program will add pastries to order price total                            | 1                      | $2 |
-| Program will start order over if invalid input id received                | Q                      | "This is not a valid input! Now you have to start over!" / Program starts again from Main() |
+| Program will start order over if invalid input is received                | Q                      | "This is not a valid input! Now you have to start over!" / Program starts again from Main() |
 
 ## Known Bugs
 
