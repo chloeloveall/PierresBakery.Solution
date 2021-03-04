@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace PierresBakery.Models
 {
   public class Bread
@@ -19,16 +16,16 @@ namespace PierresBakery.Models
         int breadResult = (numOfBread * 5);
         return breadResult;
       }
-      else if (numOfBread % 3 == 1)
+      else if (numOfBread % 3 != 0)
       {
         int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + ((numOfBread % 3) * 5));
         return breadResult;
       }
-      else if (numOfBread % 3 == 2)
-      {
-        int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + ((numOfBread % 3) * 5));
-        return breadResult;
-      }
+      // else if (numOfBread % 3 == 2)
+      // {
+      //   int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + ((numOfBread % 3) * 5));
+      //   return breadResult;
+      // }
       else
       {
         int breadResult = ((numOfBread / 3) * 10);
