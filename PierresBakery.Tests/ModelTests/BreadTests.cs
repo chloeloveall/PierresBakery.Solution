@@ -59,5 +59,14 @@ namespace PierresBakery.Tests
       Assert.AreEqual(20, breadResult);
     }
 
+    [TestMethod]
+    public void BreadPriceTotalNegative_ReturnsBreadPriceTotalNegativeNum_Int()
+    {
+      int numOfBread = -5;
+      Bread newBread = new Bread(numOfBread);
+      int breadResult = newBread.BreadPriceTotal();
+      Assert.AreEqual(0, breadResult);
+    }
+
   }
 }
