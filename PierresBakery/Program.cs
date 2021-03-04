@@ -73,7 +73,7 @@ namespace PierresBakery
       Pastry newPastry = new Pastry(numOfPastry);
       if (parsePastrySuccess)
       {
-        Console.WriteLine($"Your grand total is: $ {newBread.BreadPriceTotal() + newPastry.PastryPriceTotal(numOfPastry)}");
+        Console.WriteLine($"Your grand total is: $ {newBread.BreadPriceTotal() + newPastry.PastryPriceTotal()}");
       }
       else
       {
