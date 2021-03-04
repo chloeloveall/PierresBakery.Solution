@@ -1,6 +1,5 @@
 using PierresBakery.Models;
 using System;
-using System.Collections.Generic;
 
 namespace PierresBakery
 {
@@ -60,7 +59,7 @@ namespace PierresBakery
       Bread newBread = new Bread(numOfBread);
       if (parseBreadSuccess)
       {
-        Console.WriteLine($"That brings your subtotal to: $ {newBread.BreadPriceTotal(numOfBread)}. How many pastries would you like to add?");
+        Console.WriteLine($"That brings your subtotal to: $ {newBread.BreadPriceTotal()}. How many pastries would you like to add?");
       }
       else
       {
@@ -74,7 +73,7 @@ namespace PierresBakery
       Pastry newPastry = new Pastry(numOfPastry);
       if (parsePastrySuccess)
       {
-        Console.WriteLine($"Your grand total is: $ {newBread.BreadPriceTotal(numOfBread) + newPastry.PastryPriceTotal(numOfPastry)}");
+        Console.WriteLine($"Your grand total is: $ {newBread.BreadPriceTotal() + newPastry.PastryPriceTotal(numOfPastry)}");
       }
       else
       {
