@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
-using System;
-using System.Collections.Generic;
 
 namespace PierresBakery.Tests
 {
@@ -39,7 +37,7 @@ namespace PierresBakery.Tests
     {
       int numOfBread = 9;
       Bread newBread = new Bread(numOfBread);
-      int breadResult = ((numOfBread / 3) * 10);
+      int breadResult = newBread.BreadPriceTotal(numOfBread);
       Assert.AreEqual(30, breadResult);
     }
 
