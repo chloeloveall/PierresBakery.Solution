@@ -50,5 +50,14 @@ namespace PierresBakery.Tests
       Assert.AreEqual(22, pastryResult);
     }
 
+    [TestMethod]
+    public void PastryPriceTotalNegative_ReturnsPastryPriceTotalNegativeNum_Int()
+    {
+      int numOfPastry = -5;
+      Pastry newPastry = new Pastry(numOfPastry);
+      int pastryResult = newPastry.PastryPriceTotal();
+      Assert.AreEqual(0, pastryResult);
+    }
+
   }
 }
