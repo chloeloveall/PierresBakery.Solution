@@ -55,7 +55,7 @@ namespace PierresBakery.Tests
     {
       int numOfBread = 5;
       Bread newBread = new Bread(numOfBread);
-      int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + (numOfBread % 3) * 5);
+      int breadResult = newBread.BreadPriceTotal(numOfBread);
       Assert.AreEqual(20, breadResult);
     }
 
