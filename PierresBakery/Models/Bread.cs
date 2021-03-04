@@ -9,16 +9,16 @@ namespace PierresBakery.Models
       NumOfBread = numOfBread;
     }
 
-    public int BreadPriceTotal(int numOfBread)
+    public int BreadPriceTotal()
     {
-      if (numOfBread < 3)
+      if (NumOfBread < 3)
       {
-        int breadResult = (numOfBread * 5);
+        int breadResult = (NumOfBread * 5);
         return breadResult;
       }
-      else if (numOfBread % 3 != 0)
+      else if (NumOfBread % 3 != 0)
       {
-        int breadResult = ((((numOfBread - (numOfBread % 3)) / 3) * 10) + ((numOfBread % 3) * 5));
+        int breadResult = ((((NumOfBread - (NumOfBread % 3)) / 3) * 10) + ((NumOfBread % 3) * 5));
         return breadResult;
       }
       // else if (numOfBread % 3 == 2)
@@ -28,7 +28,7 @@ namespace PierresBakery.Models
       // }
       else
       {
-        int breadResult = ((numOfBread / 3) * 10);
+        int breadResult = ((NumOfBread / 3) * 10);
         return breadResult;
       }
     }

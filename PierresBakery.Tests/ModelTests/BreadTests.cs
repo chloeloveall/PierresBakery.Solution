@@ -28,7 +28,7 @@ namespace PierresBakery.Tests
     {
       int numOfBread = 2;
       Bread newBread = new Bread(numOfBread);
-      int breadResult = newBread.BreadPriceTotal(numOfBread);
+      int breadResult = newBread.BreadPriceTotal();
       Assert.AreEqual(10, breadResult);
     }
 
@@ -37,7 +37,7 @@ namespace PierresBakery.Tests
     {
       int numOfBread = 9;
       Bread newBread = new Bread(numOfBread);
-      int breadResult = newBread.BreadPriceTotal(numOfBread);
+      int breadResult = newBread.BreadPriceTotal();
       Assert.AreEqual(30, breadResult);
     }
 
@@ -46,7 +46,7 @@ namespace PierresBakery.Tests
     {
       int numOfBread = 4;
       Bread newBread = new Bread(numOfBread);
-      int breadResult = newBread.BreadPriceTotal(numOfBread);
+      int breadResult = newBread.BreadPriceTotal();
       Assert.AreEqual(15, breadResult);
     }
 
@@ -55,7 +55,7 @@ namespace PierresBakery.Tests
     {
       int numOfBread = 5;
       Bread newBread = new Bread(numOfBread);
-      int breadResult = newBread.BreadPriceTotal(numOfBread);
+      int breadResult = newBread.BreadPriceTotal();
       Assert.AreEqual(20, breadResult);
     }
 
