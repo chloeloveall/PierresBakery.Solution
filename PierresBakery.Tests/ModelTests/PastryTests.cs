@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
-using System;
-using System.Collections.Generic;
 
 namespace PierresBakery.Tests
 {
@@ -28,10 +26,10 @@ namespace PierresBakery.Tests
     [TestMethod]
     public void PastryPriceTotal_ReturnsPastryPriceTotal_Int()
     {
-      int numOfPastry = 7;
+      int numOfPastry = 11;
       Pastry newPastry = new Pastry(numOfPastry);
-      int pastryResult = ((numOfPastry / 3) * 5);
-      Assert.AreEqual(10, pastryResult);
+      int pastryResult = newPastry.PastryPriceTotal();
+      Assert.AreEqual(19, pastryResult);
     }
 
     [TestMethod]
@@ -39,7 +37,7 @@ namespace PierresBakery.Tests
     {
       int numOfPastry = 2;
       Pastry newPastry = new Pastry(numOfPastry);
-      int pastryResult = (numOfPastry * 2);
+      int pastryResult = newPastry.PastryPriceTotal();
       Assert.AreEqual(4, pastryResult);
     }
 
@@ -48,7 +46,7 @@ namespace PierresBakery.Tests
     {
       int numOfPastry = 13;
       Pastry newPastry = new Pastry(numOfPastry);
-      int pastryResult = (((numOfPastry - (numOfPastry % 3)) / 3) * 5) + ((numOfPastry % 3) * 2);
+      int pastryResult = newPastry.PastryPriceTotal();
       Assert.AreEqual(22, pastryResult);
     }
 
